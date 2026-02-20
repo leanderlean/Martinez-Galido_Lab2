@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>se</title>
+  </head>
+  <body>
+    <div class="min-h-screen flex items-center justify-center flex-col">
+      <div class="fixed top-0 left-0 w-full h-full -z-10">
+        <img src="/bg.png" alt="bg-img" class="w-full h-full object-cover" />
+      </div>
+
+      <div class="flex bg-white h-16 w-[60vw] items-center rounded-4xl">
+        <input
+          type="text"
+          id="searchBar"
+          class="outline-none w-full mr-4 text-xl ml-6"
+          placeholder="Search"
+        />
+
+        <div>
+          <button id="searchButton">
+            <div class="px-4 text-gray-500 ml-2 mr-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="suggestion"
+        class="h-12 bg-white mt-0 w-[60vw] flex flex-col rounded-lg text-black"
+      ></div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
